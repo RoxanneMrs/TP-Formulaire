@@ -1,0 +1,146 @@
+
+/* ///// FLEX ///// */
+.d-flex {
+    display: flex;
+}
+
+.column { 
+    flex-direction: column;
+}
+
+
+/* //// FLEX EMPLACEMENTS //// */
+.justify-content-start {
+    justify-content: start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+
+/* ///// TAILLES ///// */
+.w-100 { 
+    width: 100%;
+}
+
+
+/* //// BACKGROUND //// */
+.bg-grey {
+    background-color: grey;
+}
+
+/* ///// TEXTE ///// */
+p { 
+    font-style: italic;
+    font-weight: bold;
+}
+
+label { 
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+}
+
+
+/* ///// MARGES ///// */
+.p0 {
+    padding: 0.4rem;
+}
+
+.p1 {
+    padding: 1rem;
+}
+
+.p1-right {
+    padding-right: 1rem;
+}
+
+.p1-bottom {
+    padding-bottom: 1rem;
+}
+
+.p2 {
+    padding: 2rem;
+}
+
+.p2-bottom {
+    padding-bottom: 2rem;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+
+
+/* ///// FORMULAIRE ///// */
+.form {
+    width: 550px;
+}
+
+label {
+    padding: 0.2rem;
+}
+
+
+h2 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+input, datalist, textarea, select {
+    width: 235px;
+    border-radius: 0.3rem;
+    padding: 0.4rem;
+}
+
+input[type="radio"] {
+    width: 12px;
+} 
+
+input[type="checkbox"] {
+    /* vertical-align: middle;
+    position: relative;
+    bottom: -22px;
+    left: -14px; */
+    width: 10px;
+} 
+
+input[type="color"] {
+    width: 25px;
+    height: 20px;
+    padding: 0;
+}
+
+input[type="range"] {
+    margin: 0;
+    padding: 0;
+}
+
+select {
+    width: 251px;
+}
+
+.border-radius {
+    border-radius: 0.2rem;
+}
+

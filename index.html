@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulaire</title>
+</head>
+
+
+
+<body class="d-flex column align-items-center">
+
+    <form action="" class="form border p2 margin-top">
+
+        <h2 class="d-flex justify-content-center p1-bottom">Formulaire de connexion</h2>
+
+        <div class="d-flex justify-content-between p1-bottom">
+            <div>           
+                <label for="name">Pseudo :</label>
+                <input class="p0 border-radius" type="name" placeholder="Votre pseudo"  name="name">
+            </div>    
+            <div>
+                <label for="password">Mot de passe :</label>
+                <input class="p0 border-radius" type="password" placeholder="Votre mot de passe" name="password">
+            </div> 
+        </div>    
+            <input class="p0 w-100" type="submit" value="Se connecter">
+     
+    </form> 
+
+    
+
+    <form action="" class="form border p2 margin-top">
+
+        <h2 class="d-flex justify-content-center p1-bottom" >Formulaire d'inscription</h2>
+
+        <div class="d-flex justify-content-between p1-bottom">
+            <div>
+                <label for="firstName">Prénom :</label>
+                <input type="text" placeholder="Votre prénom" name="firstName">
+            </div>
+            
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" placeholder="Votre nom" name="name">
+            </div>
+        </div>    
+
+        <div class="d-flex justify-content-between p1-bottom" >
+            <div>
+                <label for="dateOfBirth">Date de Naissance :</label>
+                <input type="date" name="dateOfBirth">
+            </div>
+            <div>  
+                <label for="phoneNumber">Téléphone :</label>
+                <input type="number" placeholder="Votre numéro" name="phoneNumber">
+            </div>  
+        </div>
+
+        <div class="d-flex justify-content-between p1-bottom">
+            <div>
+                <label for="yourCity">Ville :</label>
+                <input list="cityChoices" placeholder="Votre ville" name="yourCity" id="yourCity">
+                <datalist id="cityChoices">
+                    <option value="Cannes">Cannes</option>
+                    <option value="Antibes">Antibes</option>
+                    <option value="Grasse">Grasse</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Nice">Nice</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="country">Pays :</label>
+                <select name="country" id="country">
+                    <option value="">Espagne</option>
+                    <option value="France">France</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Suisse">Suisse</option>
+                    <option value="Belgique">Belgique</option>
+                    <option value="Allemagne">Allemagne</option>
+                </select>
+            </div>    
+        </div>
+
+        <div class="d-flex justify-content-between p1-bottom">
+            <div>
+                <label for="adress">Adresse :</label>
+                <textarea name="adress" placeholder="Votre adresse" id="adress" cols="20" rows="1"></textarea>
+            </div>
+            <div>    
+                <label for="zipCode">Code Postal :</label>
+                <input type="text" placeholder="Votre code postal" name="zipCode">
+            </div>
+        </div>    
+
+        
+        <label for="woman, man">Civilité :</label>
+        <div class="d-flex justify-content-start p1-bottom">
+            <div>
+                <label>
+                    <input type="radio" id="woman" name="woman">Femme
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" id="man" name="man">Homme
+                </label>
+            </div>
+        </div>
+
+        <label class="">Comment avez-vous entendu parler de ce site ?</label>
+        <div class="d-flex p1-bottom justify-content-evenly">
+            <div>   
+                <label for="friend" class="p1-right">
+                <input type="checkbox" id="friend" name="friend"> 
+                Un ami </label>
+            </div>
+            <div>
+                <label for="pub" class="p1-right">
+                <input type="checkbox" name="pub" id="pub">
+                Une publicité</label>
+            </div>
+            <div>
+                <label for="hasard">
+                <input type="checkbox" name="hasard" id="hasard">
+                Par hasard</label>
+            </div>
+        </div>
+
+         <div class="d-flex justify-content-between p1-bottom">
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" placeholder="Votre email">
+            </div>
+            <div>    
+                <label for="password2">Mot de passe :</label>
+                <input type="password" name="password2" id="password2" placeholder="Votre mot de passe">
+            </div>
+        </div>    
+
+        <div class="p1-bottom">
+            <label for="pfp">Avatar :</label>
+            <input type="file" name="pfp" id="pfp"/>
+        </div>
+
+        <div class="p1-bottom">
+            <label for="note">Sur une échelle de 1 à 5, quelle note donneriez-vous à ce formulaire ?</label>
+            <input class="w-100" type="range" name="note" id="note">
+        </div>
+
+        <div class="p1-bottom">
+            <label for="color">Vous pouvez choisir la couleur de votre thème lors de la création de votre profil</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <div class="p1-bottom">
+            <input class="w-100" type="submit" value="S'inscrire">
+        </div>
+
+        <input class="w-100 bg-grey" type="reset" value="Recommencer">
+
+    </form>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
